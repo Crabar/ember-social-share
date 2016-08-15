@@ -1,15 +1,14 @@
 import ShareButton from '../components/share-button';
 
 export default ShareButton.extend({
-  shareURL: 'https://facebook.com/sharer.php',
+  shareURL: 'http://vk.com/share.php',
 
   actions: {
     share() {
       let url = this.get('shareURL');
-      url += '?display=popup';
-      url += '&u=' + this.get('url');
+      url += '?url=' + this.get('url');
       url += '&title=' + this.get('title');
-      url += '&picture=' + this.get('picture');
+      url += '&image=' + this.get('picture');
       url += '&description=' + this.get('text');
 
       var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
@@ -20,7 +19,7 @@ export default ShareButton.extend({
 
       var left = ((width / 2) - (600 / 2)) + dualScreenLeft;
       var top = ((height / 2) - (600 / 2)) + dualScreenTop;
-      var newWindow = window.open(url, 'Facebook', 'location=no,toolbar=no,menubar=no,scrollbars=no,status=no, width=600, height=600, top=' + top + ', left=' + left);
+      var newWindow = window.open(url, 'VKontakte', 'location=no,toolbar=no,menubar=no,scrollbars=no,status=no, width=600, height=600, top=' + top + ', left=' + left);
 
       if (window.focus) {
         newWindow.focus();
