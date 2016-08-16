@@ -1,5 +1,7 @@
 <h2 id="title">Welcome to ember-social-share</h2>
-{{#fb-share-button url="http://random.org" title="Test title 2" image="http://www.mignews.ru/aimages/05_16/180516_122302_84352_2.jpg"}}Share FB{{/fb-share-button}}
-{{#vk-share-button url="http://example.com" title="Test title 1" image="http://www.mignews.ru/aimages/05_16/180516_122302_84352_2.jpg" text="qwerty"}}Share VK{{/vk-share-button}}
-{{#twitter-share-button url="http://example.com" title="Test tweet" hashtags="example,test"}}Tweet{{/twitter-share-button}}
-{{outlet}}
+{{#fb-share-button url="http://random.org" title="Test title 2" image="http://www.mignews.ru/aimages/05_16/180516_122302_84352_2.jpg" }}Share FB{{/fb-share-button}}
+{{#vk-share-button url="http://example.com" title="Test title 1" image="http://www.mignews.ru/aimages/05_16/180516_122302_84352_2.jpg" text="qwerty" }}Share VK{{/vk-share-button}}
+{{#twitter-share-button url="http://example.com" title="Test tweet" hashtags="example,test" }}Tweet{{/twitter-share-button}}
+
+{{share-panel buttons="vk, facebook, twitter" labels="Share VK,Share FB,Tweet" url="http://example.com" title="Title!" image="http://www.vokrugsveta.ru/img/cmn/2013/06/15/002.jpg" text="Che Gevara" hashtags="che"}}
+ {{outlet}}
