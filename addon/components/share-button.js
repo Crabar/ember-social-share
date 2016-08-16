@@ -16,11 +16,11 @@ export default Ember.Component.extend({
   },
 
   getPopupPosition() {
-    const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
-    const dualScreenTop = window.screenTop !== undefined ? window.screenTop : screen.top;
+    const dualScreenLeft = screen.availLeft;
+    const dualScreenTop = screen.availTop;
 
-    const windowWidth = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-    const windowheight = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+    const windowWidth = screen.availWidth;
+    const windowheight =  screen.availHeight;
 
     const left = ((windowWidth / 2) - (600 / 2)) + dualScreenLeft;
     const top = ((windowheight / 2) - (600 / 2)) + dualScreenTop;

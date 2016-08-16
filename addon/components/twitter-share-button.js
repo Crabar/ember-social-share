@@ -8,7 +8,7 @@ export default ShareButton.extend({
     share() {
       let url = this.get('shareURL');
       url += '?text=' + this.get('title');
-      url += '&url=' + this.get('url');
+      url += '&url=' + encodeURIComponent(this.get('url'));
       url += '&hashtags=' + this.get('hashtags');
 
       this.openSharePopup(url);

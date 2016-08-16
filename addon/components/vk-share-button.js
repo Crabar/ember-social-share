@@ -6,7 +6,7 @@ export default ShareButton.extend({
   actions: {
     share() {
       let url = this.get('shareURL');
-      url += '?url=' + this.get('url');
+      url += '?url=' + encodeURIComponent(this.get('url'));
       url += '&title=' + this.get('title');
       url += '&image=' + this.get('image');
       url += '&description=' + this.get('text');
