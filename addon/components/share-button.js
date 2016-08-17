@@ -3,6 +3,7 @@ import layout from '../templates/components/share-button';
 
 export default Ember.Component.extend({
   layout: layout,
+  tagName: 'button',
   url: '',
   title: '',
   text: '',

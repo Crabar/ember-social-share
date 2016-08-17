@@ -1,0 +1,36 @@
+.fb-share-button {
+  background: #4267b2;
+  border: 1px solid #4267b2;
+  color: #fff;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  border-radius: 3px;
+  font-size: 11px;
+  height: 20px;
+  padding: 0 0 0 2px;
+  display: inline-block;
+  zoom: 1;
+}
+.fb-share-button div {
+  height: 16px;
+}
+.fb-share-button svg {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+}
+.fb-share-button span {
+  margin-left: -4px;
+  vertical-align: middle;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
