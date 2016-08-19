@@ -4,7 +4,7 @@ import layout from '../templates/components/vk-share-button';
 export default ShareButton.extend({
   layout,
   shareURL: 'http://vk.com/share.php',
-  classNames: ['vk-share-button'],
+  classNames: ['vk-share-button', 'share-button'],
   click() {
     let url = this.get('shareURL');
     url += '?url=' + encodeURIComponent(this.get('url'));

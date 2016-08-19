@@ -6,6 +6,13 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+      'font-src': "'self'",
+      'style-src': "'self'",
+      'script-src': "'self'",
+      'connect-src': "'self'",
+      'img-src': "'self' vk.com data:"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
