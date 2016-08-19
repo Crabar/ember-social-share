@@ -1,6 +1,8 @@
 import ShareButton from '../components/share-button';
+import layout from '../templates/components/vk-share-button';
 
 export default ShareButton.extend({
+  layout,
   shareURL: 'http://vk.com/share.php',
   classNames: ['vk-share-button'],
   click() {
