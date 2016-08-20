@@ -50,13 +50,16 @@
   padding: 0 0 0 2px;
   cursor: pointer;
 }
-.vk-share-button> div {
+.vk-share-button> svg {
+  width: 16px;
+  height: 16px;
   display: inline-block;
-  background-size: 19px 59px;
-  background-image: url('/assets/like_widget.png');
-  height: 8px;
-  width: 14px;
+  zoom: 1;
   vertical-align: middle;
+  fill: #ffffff;
+  fill-opacity: 1;
+  fill-rule: evenodd;
+  stroke: none
 }
 .vk-share-button> span {
   vertical-align: middle;
