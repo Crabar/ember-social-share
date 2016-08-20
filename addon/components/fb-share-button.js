@@ -9,9 +9,9 @@ export default ShareButton.extend({
     let url = this.get('shareURL');
     url += '?display=popup';
     url += '&u=' + encodeURIComponent(this.get('url'));
-    url += '&title=' + this.get('title');
-    url += '&picture=' + this.get('image');
-    url += '&description=' + this.get('text');
+    url += this.get('title') ? '&title=' + this.get('title') : '';
+    url += this.get('image') ? '&picture=' + this.get('image') : '';
+    url += this.get('text') ? '&description=' + this.get('text') : '';
 
     this.openSharePopup(url);
   }

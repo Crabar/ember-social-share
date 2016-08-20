@@ -53,7 +53,7 @@
 .vk-share-button> div {
   display: inline-block;
   background-size: 19px 59px;
-  background-image: url('https://vk.com/images/icons/like_widget.png');
+  background-image: url('/assets/like_widget.png');
   height: 8px;
   width: 14px;
   vertical-align: middle;

@@ -7,6 +7,7 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('vendor/assets/like_widget.png');
   /*
     This build file specifes the options for the dummy test app of this
     addon, located in `/tests/dummy`

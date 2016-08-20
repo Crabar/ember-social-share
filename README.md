@@ -1,26 +1,20 @@
 # Ember-social-share
 
-This README outlines the details of collaborating on this Ember addon.
+The main purpose of this addon to provide possibility to share links with images, title, descriptions etc without meta properties and without server rendering.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+    ember install ember-social-share
 
-## Running
+## Usage
+Need to update...
 
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Options
+Option | Facebook | VKontakte | Twitter
+------ | -------- | --------- | -------
+url | :white_check_mark: | :white_check_mark: | :white_check_mark:
+title | :white_check_mark: | :white_check_mark: | :white_check_mark:
+text | :white_check_mark: | :white_check_mark: | :x:
+image | :white_check_mark: | :white_check_mark: | :x:
+hashtags | :x: | :x: | :white_check_mark:
+via | :x: | :x: | :white_check_mark:
