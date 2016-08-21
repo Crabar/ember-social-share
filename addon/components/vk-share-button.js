@@ -7,7 +7,7 @@ export default ShareButton.extend({
   classNames: ['vk-share-button', 'share-button'],
   click() {
     let url = this.get('shareURL');
-    url += '?url=' + encodeURIComponent(this.get('url'));
+    url += '?url=' + encodeURIComponent(this.getCurrentUrl());
     url += this.get('title') ? '&title=' + this.get('title') : '';
     url += this.get('image') ? '&image=' + this.get('image') : '';
     url += this.get('text') ? '&description=' + this.get('text') : '';

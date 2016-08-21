@@ -9,11 +9,8 @@ export default Ember.Component.extend({
   text: '',
   image: '',
 
-  didInsertElement() {
-    this._super(...arguments);
-    if (this.get('url') === '') {
-      this.set('url', document.location.href);
-    }
+  getCurrentUrl() {
+    return this.get('url') !== '' ? this.get('url') : document.location.href;
   },
 
   getPopupPosition() {
