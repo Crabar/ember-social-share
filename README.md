@@ -2,6 +2,8 @@
 
 The main purpose of this addon to provide possibility to share links with images, title, descriptions etc without meta properties and without server rendering.
 
+[DEMO](https://crabar.github.io/ember-social-share/)
+
 ## Installation
 
     ember install ember-social-share
