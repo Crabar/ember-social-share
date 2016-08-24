@@ -41,7 +41,9 @@
   "keywords": [
     "ember-addon",
     "social",
-    "share"
+    "share",
+    "ui",
+    "buttons"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
