@@ -10,6 +10,8 @@ export default Ember.Component.extend({
                       'twitter': 'twitter-share-button'},
   buttons: '',
   labels: '',
+  adaptive: true,
+  
   components: Ember.computed('buttons', function() {
     const buttons = this.get('buttons').split(',').map((item) => item.trim());
     const labels = this.get('labels').split(',').map((item) => item.trim());
