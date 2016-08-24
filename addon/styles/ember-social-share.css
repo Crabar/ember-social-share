@@ -50,6 +50,7 @@
   height: 20px;
   padding: 0 0 0 2px;
   cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .vk-share-button> svg {
   width: 16px;
@@ -83,6 +84,7 @@
   height: 20px;
   border: 1px solid #1b95e0;
   padding: 0 0 0 2px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .twitter-share-button> i {
   display: inline-block;
