@@ -7,6 +7,8 @@ export default Ember.Component.extend({
   title: '',
   text: '',
   image: '',
+  classNameBindings: ['adaptive:adaptive-button'],
+  adaptive: true,
 
   getCurrentUrl() {
     return this.get('url') ? this.get('url') : document.location.href;

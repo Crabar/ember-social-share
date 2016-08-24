@@ -104,3 +104,17 @@
   text-align: center;
   margin-left: -4px;
 }
+@media (max-width: 768px) {
+  .adaptive-button span {
+    visibility: hidden;
+    display: none;
+  }
+  .adaptive-button {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .adaptive-button.twitter-share-button {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
