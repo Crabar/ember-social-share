@@ -14,9 +14,13 @@ export default Ember.Component.extend({
   adaptive: true,
 
   components: Ember.computed('buttons', function() {
-    const buttons = this.get('buttons').split(',').map((item) => item.trim());
-    const labels = this.get('labels').split(',').map((item) => item.trim());
+    const buttons = this.splitData(this.get('buttons'));
+    const labels = this.splitData(this.get('labels'));
     return buttons.map((item, index) =>
       ({name: this.get('buttonToComponent')[item], label: labels[index]}));
-  })
+  }),
+
+  splitData(data) {
+    return data.split(',').map((item) => item.trim());
+  }
 });

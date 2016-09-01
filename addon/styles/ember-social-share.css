@@ -4,6 +4,8 @@
   -webkit-font-smoothing: antialiased;
   margin: 0;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   display: inline-block;
   zoom: 1;
 }
@@ -24,6 +26,7 @@
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
 }
 .fb-share-button div {
   height: 16px;
