@@ -32,7 +32,7 @@ export default Ember.Component.extend({
     var newWindow = window.open(url, 'Facebook',
     'location=no,toolbar=no,menubar=no,scrollbars=no,status=no, width=600, height=600, top=' + popupPosition.top + ', left=' + popupPosition.left);
 
-    if (newWindow.focus) {
+    if (typeof(newWindow) != 'undefined' && newWindow.focus) {
       newWindow.focus();
     }
   }
