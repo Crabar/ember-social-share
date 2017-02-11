@@ -14,7 +14,6 @@ export default ShareButton.extend({
     url += '&summary=' + this.get('text');
     url += this.get('via') ? '&source=' + this.get('via') : '';
 
-console.log('URL: ' + url);
     this.openSharePopup(url);
   }
 });
