@@ -36,7 +36,7 @@ At section below you can find share options that can be set for each button or p
 
 ## Options
 Option | Description | Facebook | VKontakte | Twitter | LinkedIn
------- | ----------- | -------- | --------- | -------
+------ | ----------- | -------- | --------- | ------- | --------
 url | page url (by default - current page url) | &#10003; | &#10003; | &#10003; | &#10003;
 title | share title (tweet message for twitter) | &#10003; | &#10003; | &#10003; | &#10003;
 text | description | &#10003; | &#10003; | &#10005; | &#10003;
