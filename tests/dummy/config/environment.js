@@ -11,7 +11,7 @@ module.exports = function(environment) {
       'style-src': "'self'",
       'script-src': "'self'",
       'connect-src': "'self'",
-      'img-src': "'self' vk.com data:"
+      'img-src': "'self' vk.com data: static.licdn.com"
     },
     EmberENV: {
       FEATURES: {

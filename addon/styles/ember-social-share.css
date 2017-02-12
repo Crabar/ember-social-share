@@ -64,7 +64,6 @@
 }
 .vk-share-button> span {
   vertical-align: middle;
-  line-height: 16px;
   font-size: 11px;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -89,7 +88,6 @@
 }
 .twitter-share-button> span {
   vertical-align: middle;
-  line-height: 16px;
   font-size: 11px;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -111,4 +109,35 @@
     padding-left: 1px;
     padding-right: 1px;
   }
+  .adaptive-button.linkedin-share-button {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.linkedin-share-button {
+  background: #0077b5;
+  border: 1px solid #0077b5;
+}
+.linkedin-share-button > div.linkedin-image {
+  width: 18px;
+  height: 18px;
+  background-image: url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;
+  background-position: -57px -424px !important;
+  background-repeat: no-repeat !important;
+  background-size: 135px auto !important;
+  /*background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyQkUwNkVCMDFDNzkxMUUyQjkxNEY3RUNEMkY1ODRBRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyQkUwNkVCMTFDNzkxMUUyQjkxNEY3RUNEMkY1ODRBRCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJCRTA2RUFFMUM3OTExRTJCOTE0RjdFQ0QyRjU4NEFEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJCRTA2RUFGMUM3OTExRTJCOTE0RjdFQ0QyRjU4NEFEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HyC/zgAAAJdJREFUeNpiZCjelMDAwDCfgTSQyAjU+B/EMpDiA4tcePaJKJ1MME0HsqzAGGYAURrJAWQ7lQXGOF9kDzGpZDPD/x5fMNuw7yDY+fwcrAwff/xmCJh/muHA3beEnQrTBAIgekGEIaaN2EDDzltAp38EeoOfod9fm0FekJO4wJlw+B7YaSCaaqFKf43weCTHxkQy9CUCBBgAN1Ux9tX3H7kAAAAASUVORK5CYII=);*/
+  display: inline-block;
+  vertical-align: middle;
+}
+.linkedin-share-button span {
+  vertical-align: middle;
+  font-size: 11px;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -4px;
 }
