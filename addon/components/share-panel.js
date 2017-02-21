@@ -9,7 +9,9 @@ export default Ember.Component.extend({
                       'vk': 'vk-share-button',
                       'vkontakte': 'vk-share-button',
                       'twitter': 'twitter-share-button',
-                      'linkedin': 'linkedin-share-button'},
+                      'linkedin': 'linkedin-share-button',
+                      'gplus': 'gplus-share-button'
+                  },
   buttons: '',
   labels: '',
   adaptive: true,
