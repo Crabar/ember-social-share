@@ -1,5 +1,6 @@
 # Ember-social-share
-[![Build Status](https://travis-ci.org/Crabar/ember-social-share.svg?branch=master)](https://travis-ci.org/Crabar/ember-social-share) [![Ember Observer Score](https://emberobserver.com/badges/ember-social-share.svg)](https://emberobserver.com/addons/ember-social-share) [![Code Climate](https://codeclimate.com/github/Crabar/ember-social-share/badges/gpa.svg)](https://codeclimate.com/github/Crabar/ember-social-share)
+[![Build Status](https://travis-ci.org/Crabar/ember-social-share.svg?branch=master)](https://travis-ci.org/Crabar/ember-social-share) [![Ember Observer Score](https://emberobserver.com/badges/ember-social-share.svg)](https://emberobserver.com/addons/ember-social-share) [![Maintainability](https://api.codeclimate.com/v1/badges/3c0998ae57213e1f92d8/maintainability)](https://codeclimate.com/github/Crabar/ember-social-share/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3c0998ae57213e1f92d8/test_coverage)](https://codeclimate.com/github/Crabar/ember-social-share/test_coverage)
 
 The main purpose of this addon to provide possibility to share links with images, title, descriptions etc without meta properties and without server rendering.
 
