@@ -14,6 +14,8 @@ env:
   - EMBER_TRY_SCENARIO=ember-release
   - EMBER_TRY_SCENARIO=ember-beta
   - EMBER_TRY_SCENARIO=ember-canary
+  global:
+    CC_TEST_REPORTER_ID=8684f81a2bc97cff46fadfb803de4939f83d2a8b602662c5e49e282b3280dc57
 
 matrix:
   fast_finish: true
@@ -24,12 +26,20 @@ before_install:
   - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
   - npm config set spin false
   - npm install -g npm@^4
-  - npm install -g bower
+  - npm install bower
   - bower --version
 
 install:
   - npm install
   - bower install
 
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
 script:
   - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
