@@ -1,6 +1,6 @@
 {
   "name": "ember-social-share",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Social share buttons for EmberJS app that works without meta tags.",
   "directories": {
     "doc": "doc",
