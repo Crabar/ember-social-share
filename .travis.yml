@@ -12,15 +12,12 @@ cache:
     - $HOME/.npm
 
 env:
-
-
-env:
-  - EMBER_TRY_SCENARIO=default
-  - EMBER_TRY_SCENARIO=ember-release
-  - EMBER_TRY_SCENARIO=ember-beta
-  - EMBER_TRY_SCENARIO=ember-canary
   global:
     - CC_TEST_REPORTER_ID=8684f81a2bc97cff46fadfb803de4939f83d2a8b602662c5e49e282b3280dc57
+    - EMBER_TRY_SCENARIO=default
+    - EMBER_TRY_SCENARIO=ember-release
+    - EMBER_TRY_SCENARIO=ember-beta
+    - EMBER_TRY_SCENARIO=ember-canary
 
 
 matrix:
