@@ -17,10 +17,11 @@ First, you can add share buttons one by one. Example:
     {{#vk-share-button}}Share{{/vk-share-button}}
     {{#twitter-share-button}}Tweet{{/twitter-share-button}}
     {{#linkedin-share-button}}Share{{/linkedin-share-button}}
+    {{#gplus-share-button}}Share{{/gplus-share-button}}
 
 Or you can add share buttons like one share panel:
 
-    {{share-panel buttons="fb,vk,twitter,linkedin" labels="Share,Share,Tweet,Share"}}
+    {{share-panel buttons="fb,vk,twitter,linkedin,gplus" labels="Share,Share,Tweet,Share,Share"}}
 
 There are some properties for any of share buttons:
 
@@ -35,14 +36,14 @@ There are some properties for ```share-panel```:
 At section below you can find share options that can be set for each button or panel.
 
 ## Options
-Option | Description | Facebook | VKontakte | Twitter | LinkedIn
------- | ----------- | -------- | --------- | ------- | --------
-url | page url (by default - current page url) | &#10003; | &#10003; | &#10003; | &#10003;
-title | share title (tweet message for twitter) | &#10003; | &#10003; | &#10003; | &#10003;
-text | description | &#10003; | &#10003; | &#10005; | &#10003;
-image | image url | &#10003; | &#10003; | &#10005; | &#10005;
-hashtags | comma-separated list of hashtags | &#10005; | &#10005; | &#10003; | &#10005;
-via | link to twitter account or source | &#10005; | &#10005; | &#10003; | &#10003;
+Option | Description | Facebook | VKontakte | Twitter | LinkedIn | Google+ |
+------ | ----------- | -------- | --------- | ------- | -------- | ------- |
+url | page url (by default - current page url) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003;
+title | share title (tweet message for twitter) | &#10003; | &#10003; | &#10003; | &#10003; | &#10005;
+text | description | &#10003; | &#10003; | &#10005; | &#10003; | &#10005;
+image | image url | &#10003; | &#10003; | &#10005; | &#10005; | &#10005;
+hashtags | comma-separated list of hashtags | &#10005; | &#10005; | &#10003; | &#10005; | &#10005;
+via | link to twitter account or source | &#10005; | &#10005; | &#10003; | &#10003; | &#10005;
 
 ## Example
 
@@ -50,6 +51,7 @@ via | link to twitter account or source | &#10005; | &#10005; | &#10003; | &#100
     {{#vk-share-button title="Some russion title!" text="Another description" image="some image url"}}Share it!{{/vk-share-button}}
     {{twitter-share-button title="Look at this!" url="http://example.com" hashtags="example" via="example.com"}}Tweet{{/twitter-share-button}}
     {{#linkedin-share-button title="Great artile!" text="Another description" image="some image url"}}Share it!{{/linkedin-share-button}}
+    {{#gplus-share-button url="http://example.com"}}Share{{/gplus-share-button}}
 
 
     {{share-panel adaptive=false title="Example title" text="Example text!" image="sorry didnt find any image" hashtags="example"}}
