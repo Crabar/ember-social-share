@@ -6,6 +6,8 @@ The main purpose of this addon to provide possibility to share links with images
 
 [DEMO](https://crabar.github.io/ember-social-share/)
 
+__WARNING: Facebook has stoped supporting custom share parameters so this addon is pretty useless for FB at this moment. More details [here](https://github.com/Crabar/ember-social-share/issues/10).__
+
 ## Installation
 
     ember install ember-social-share
