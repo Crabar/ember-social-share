@@ -6,8 +6,6 @@ The main purpose of this addon to provide possibility to share links with images
 
 [DEMO](https://crabar.github.io/ember-social-share/)
 
-__WARNING: Facebook has stoped supporting custom share parameters so this addon is pretty useless for FB at this moment. More details [here](https://github.com/Crabar/ember-social-share/issues/10).__
-
 ## Installation
 
     ember install ember-social-share
@@ -42,16 +40,17 @@ At section below you can find share options that can be set for each button or p
 Option | Description | Facebook | VKontakte | Twitter | LinkedIn | Google+ |
 ------ | ----------- | -------- | --------- | ------- | -------- | ------- |
 url | page url (by default - current page url) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003;
-title | share title (tweet message for twitter) | &#10003; | &#10003; | &#10003; | &#10003; | &#10005;
-text | description | &#10003; | &#10003; | &#10005; | &#10003; | &#10005;
-image | image url | &#10003; | &#10003; | &#10005; | &#10005; | &#10005;
-hashtags | comma-separated list of hashtags | &#10005; | &#10005; | &#10003; | &#10005; | &#10005;
+title | share title (tweet message for twitter) | &#10005; | &#10003; | &#10003; | &#10003; | &#10005;
+text | description | &#10005; | &#10003; | &#10005; | &#10003; | &#10005;
+image | image url | &#10005; | &#10003; | &#10005; | &#10005; | &#10005;
+hashtags | comma-separated list of hashtags (Facebook only uses the first one) | &#10003; | &#10005; | &#10003; | &#10005; | &#10005;
 via | link to twitter account or source | &#10005; | &#10005; | &#10003; | &#10003; | &#10005;
+quote | excerpt from page | &#10003; | &#10005; | &#10005; | &#10005; | &#10005; |
 
 ## Example
 
-    {{#fb-share-button url="http://example.com" title="Here is example!" text="Some description..."}}Share{{/fb-share-button}}
-    {{#vk-share-button title="Some russion title!" text="Another description" image="some image url"}}Share it!{{/vk-share-button}}
+    {{#fb-share-button url="http://example.com" quote="Here is some text from the source."}}Share{{/fb-share-button}}
+    {{#vk-share-button title="Some Russian title!" text="Another description" image="some image url"}}Share it!{{/vk-share-button}}
     {{twitter-share-button title="Look at this!" url="http://example.com" hashtags="example" via="example.com"}}Tweet{{/twitter-share-button}}
     {{#linkedin-share-button title="Great artile!" text="Another description" image="some image url"}}Share it!{{/linkedin-share-button}}
     {{#gplus-share-button url="http://example.com"}}Share{{/gplus-share-button}}
