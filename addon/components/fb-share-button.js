@@ -5,14 +5,24 @@ export default ShareButton.extend({
   layout,
   shareURL: 'https://facebook.com/sharer.php',
   classNames: ['fb-share-button', 'share-button'],
-  click() {
-    let url = this.get('shareURL');
-    url += '?display=popup';
-    url += '&u=' + encodeURIComponent(this.getCurrentUrl());
-    url += this.get('title') ? '&title=' + this.get('title') : '';
-    url += this.get('image') ? '&picture=' + this.get('image') : '';
-    url += this.get('text') ? '&description=' + this.get('text') : '';
 
+  hashtag: Ember.computed('hashtags', function() {
+    if (this.get('hashtags')) {
+      let firstTag = this.get('hashtags').split(',').shift();
+      return encodeURIComponent(`#${firstTag}`);
+    }
+  }),
+
+  buildUrl() {
+    let quote = this.get('quote') ? `&quote=${this.get('quote')}` : '';
+    let hashtag = this.get('hashtag') ? `&hashtag=${this.get('hashtag')}` : '';
+    let currentUrl = encodeURIComponent(this.getCurrentUrl());
+    let url = `${this.get('shareURL')}?display=popup&u=${currentUrl}${hashtag}${quote}`;
+    return url;
+  },
+
+  click() {
+    let url = this.buildUrl();
     this.openSharePopup(url);
   }
 });
