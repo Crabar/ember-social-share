@@ -36,8 +36,7 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-try": "^0.2.22",
-    "loader.js": "^4.6.0",
-    "ember-cli-shims": "^1.2.0"
+    "loader.js": "^4.6.0"
   },
   "keywords": [
     "ember-addon",

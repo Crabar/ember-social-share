@@ -5,7 +5,6 @@
     "ember-resolver": "^0.1.21",
     "ember-qunit-notifications": "0.1.0",
     "ember-qunit": "^1.0.0",
-    "ember-cli-shims": "^1.2.0",
     "jquery": "^3.3.0",
     "loader.js": "ember-cli/loader.js#4.6.0",
     "qunit": "~2.5.0"
