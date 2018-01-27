@@ -1,6 +1,3 @@
-button:focus, button:active, button:visited {
-    outline: none;
-}
 .fb-share-button {
   background: #4267b2;
   border: 1px solid #4267b2;
