@@ -1,24 +1,14 @@
-button {
-  font-family: Helvetica, Arial, sans-serif;
-  height: 20px;
-  margin: 0 2px;
-  padding: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-span {
+.share-button span {
   -webkit-font-smoothing: antialiased;
   font-weight: 700;
   padding: 3px 4px;
 }
 
-svg {
+.share-button svg {
   padding: 2px 0 0 4px;
 }
 
-path {
+.share-button path {
   /* Default to white unless otherwise defined (Google Plus as example) */
   fill: #ffffff;
   height: 16px;
@@ -32,6 +22,12 @@ path {
   font-size: 11px;
   height: 20px;
   white-space: nowrap;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 2px;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .share-button:hover {
