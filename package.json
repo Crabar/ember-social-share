@@ -49,6 +49,8 @@
     "buttons"
   ],
   "dependencies": {
+    "@fortawesome/ember-fontawesome": "^0.1.0-8",
+    "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
     "ember-cli-babel": "^6.8.2",
     "ember-cli-htmlbars": "^2.0.3"
   },
