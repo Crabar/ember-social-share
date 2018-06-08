@@ -61,6 +61,11 @@ path {
   border: 1px solid #6287ae;
 }
 
+.gplus-share-button {
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+}
+
 .gplus-share-button span {
   color: #2f2f2f;
 }
@@ -85,12 +90,16 @@ path {
 }
 
 @media (max-width: 768px) {
+  .adaptive-button {
+    width: 20px;
+  }
+
   .adaptive-button span {
     display: none;
     visibility: hidden;
   }
   .adaptive-button svg {
-    margin: 2px 3px;
+    margin: 2px auto;
     padding: 0;
   }
 }
