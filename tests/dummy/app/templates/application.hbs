@@ -1,10 +1,16 @@
 <h2 id="title">Welcome to ember-social-share</h2>
+
 <h3>Separated buttons with adaptive design and non-default url (example.com)</h3>
+
 {{#fb-share-button quote="Here is an excerpt from the source" url="http://example.com" title="Test title 2" image="http://www.mignews.ru/aimages/05_16/180516_122302_84352_2.jpg" }}Share on Facebook{{/fb-share-button}}
 {{#vk-share-button url="http://example.com" title="Test title 1" image="http://www.mignews.ru/aimages/05_16/180516_122302_84352_2.jpg" text="qwerty" }}Share{{/vk-share-button}}
 {{#twitter-share-button url="http://example.com" title="Test tweet" hashtags="example,test" via="example.org"}}Tweet{{/twitter-share-button}}
 {{#linkedin-share-button url="http://example.com" title="Test article" text="very interesting" via="example.org"}}Share{{/linkedin-share-button}}
 {{#gplus-share-button url="http://example.com"}}Share{{/gplus-share-button}}
+
 <h3>Share panel without adaptive design with default url</h3>
-{{share-panel adaptive=false buttons="vk, facebook, twitter, linkedin, gplus" labels="Share,Share,Tweet,Share,Share" title="Title!" quote="Here is an excerpt from the source" image="http://www.vokrugsveta.ru/img/cmn/2013/06/15/002.jpg" text="Ember social share addon" hashtags="embersocialshare,ember" url="https://www.npmjs.com/package/ember-social-share"}}
+{{share-panel adaptive=false buttons="facebook, vk, twitter, linkedin, gplus" labels="Share,Share,Tweet,Share,Share" title="Title!" quote="Here is an excerpt from the source" image="http://www.vokrugsveta.ru/img/cmn/2013/06/15/002.jpg" text="Ember social share addon" hashtags="embersocialshare,ember" url="https://www.npmjs.com/package/ember-social-share"}}
  {{outlet}}
+
+<h3>Share panel in a different order with different labels (Twitter, Linkedin, VK, Facebook, Google Plus)</h3>
+{{share-panel adaptive=false buttons="twitter, linkedin, vk, facebook, gplus" labels="Tweet,Share on Linkedin,Share,Share to Facebook,Share with circles on Google Plus" title="Title!" quote="Here is an excerpt from the source" image="http://www.vokrugsveta.ru/img/cmn/2013/06/15/002.jpg" text="Ember social share addon" hashtags="embersocialshare,ember" url="https://www.npmjs.com/package/ember-social-share"}}
