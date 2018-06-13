@@ -1,3 +1,4 @@
+import { computed } from '@ember/object';
 import ShareButton from '../components/share-button';
 import layout from '../templates/components/fb-share-button';
 
@@ -6,7 +7,7 @@ export default ShareButton.extend({
   shareURL: 'https://facebook.com/sharer.php',
   classNames: ['fb-share-button', 'share-button'],
 
-  hashtag: Ember.computed('hashtags', function() {
+  hashtag: computed('hashtags', function() {
     if (this.get('hashtags')) {
       let firstTag = this.get('hashtags').split(',').shift();
       return encodeURIComponent(`#${firstTag}`);

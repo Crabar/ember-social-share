@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import { computed } from '@ember/object';
+import Component from '@ember/component';
 import layout from '../templates/components/share-panel';
 
-export default Ember.Component.extend({
+export default Component.extend({
   layout,
   classNames: ['share-panel'],
   buttonToComponent: {'fb': 'fb-share-button',
@@ -16,7 +17,7 @@ export default Ember.Component.extend({
   labels: '',
   adaptive: true,
 
-  components: Ember.computed('buttons', function() {
+  components: computed('buttons', function() {
     const buttons = this.splitData(this.get('buttons'));
     const labels = this.splitData(this.get('labels'));
     return buttons.map((item, index) =>
