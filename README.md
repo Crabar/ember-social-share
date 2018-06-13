@@ -61,3 +61,8 @@ quote | excerpt from page | &#10003; | &#10005; | &#10005; | &#10005; | &#10005;
 
 ## Icon credit
 Icons are provided by [Font Awesome's Ember plugin](https://github.com/FortAwesome/ember-fontawesome). Find out more about the usage here: https://github.com/FortAwesome/ember-fontawesome#usage
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
