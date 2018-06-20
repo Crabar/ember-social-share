@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import ShareButton from '../components/share-button';
 import layout from '../templates/components/fb-share-button';
 

@@ -19,10 +19,10 @@ export default Ember.Component.extend({
     const dualScreenTop = screen.availTop;
 
     const windowWidth = screen.availWidth;
-    const windowheight =  screen.availHeight;
+    const windowHeight =  screen.availHeight;
 
     const left = ((windowWidth / 2) - (600 / 2)) + dualScreenLeft;
-    const top = ((windowheight / 2) - (600 / 2)) + dualScreenTop;
+    const top = ((windowHeight / 2) - (600 / 2)) + dualScreenTop;
 
     return {left: left, top: top};
   },
