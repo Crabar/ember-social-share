@@ -38,6 +38,7 @@
   -o-transition: opacity .25s ease-in-out;
 }
 
+.email-div,
 .linkedin-div,
 .fb-div,
 .twitter-div,
@@ -79,6 +80,18 @@
 .twitter-share-button {
   background-color: #1b95e0;
   border: 1px solid #1b95e0;
+}
+
+.email-share-button {
+  background-color: #666666;
+  border: 1px solid #666666;
+}
+
+.email-share-button a {
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: flex-start;
 }
 
 .share-panel {

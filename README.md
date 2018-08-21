@@ -37,15 +37,15 @@ There are some properties for ```share-panel```:
 At section below you can find share options that can be set for each button or panel.
 
 ## Options
-Option | Description | Facebook | VKontakte | Twitter | LinkedIn | Google+ |
------- | ----------- | -------- | --------- | ------- | -------- | ------- |
-url | page url (by default - current page url) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003;
-title | share title (tweet message for twitter) | &#10005; | &#10003; | &#10003; | &#10003; | &#10005;
-text | description | &#10005; | &#10003; | &#10005; | &#10003; | &#10005;
-image | image url | &#10005; | &#10003; | &#10005; | &#10005; | &#10005;
-hashtags | comma-separated list of hashtags (Facebook only uses the first one) | &#10003; | &#10005; | &#10003; | &#10005; | &#10005;
-via | link to twitter account or source | &#10005; | &#10005; | &#10003; | &#10003; | &#10005;
-quote | excerpt from page | &#10003; | &#10005; | &#10005; | &#10005; | &#10005; |
+Option | Description | Facebook | VKontakte | Twitter | LinkedIn | Google+ | E-mail |
+------ | ----------- | -------- | --------- | ------- | -------- | ------- | ------ |
+url | page url (by default - current page url) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+title | share title (tweet message for twitter) | &#10005; | &#10003; | &#10003; | &#10003; | &#10005; | &#10003; |
+text | description | &#10005; | &#10003; | &#10005; | &#10003; | &#10005; | &#10003; |
+image | image url | &#10005; | &#10003; | &#10005; | &#10005; | &#10005; | &#10005; |
+hashtags | comma-separated list of hashtags (Facebook only uses the first one) | &#10003; | &#10005; | &#10003; | &#10005; | &#10005; | &#10005; |
+via | link to twitter account or source | &#10005; | &#10005; | &#10003; | &#10003; | &#10005; | &#10005; |
+quote | excerpt from page | &#10003; | &#10005; | &#10005; | &#10005; | &#10005; | &#10005; |
 
 ## Example
 
