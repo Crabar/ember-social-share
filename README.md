@@ -51,7 +51,7 @@ quote | excerpt from page | &#10003; | &#10005; | &#10005; | &#10005; | &#10005;
 
     {{#fb-share-button url="http://example.com" quote="Here is some text from the source."}}Share{{/fb-share-button}}
     {{#vk-share-button title="Some Russian title!" text="Another description" image="some image url"}}Share it!{{/vk-share-button}}
-    {{twitter-share-button title="Look at this!" url="http://example.com" hashtags="example" via="example.com"}}Tweet{{/twitter-share-button}}
+    {{#twitter-share-button title="Look at this!" url="http://example.com" hashtags="example" via="example.com"}}Tweet{{/twitter-share-button}}
     {{#linkedin-share-button title="Great artile!" text="Another description" image="some image url"}}Share it!{{/linkedin-share-button}}
     {{#gplus-share-button url="http://example.com"}}Share{{/gplus-share-button}}
 
