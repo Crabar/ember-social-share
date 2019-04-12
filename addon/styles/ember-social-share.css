@@ -43,7 +43,8 @@
 .fb-div,
 .twitter-div,
 .vk-div,
-.gplus-div {
+.gplus-div,
+.reddit-div {
   align-items: flex-start;
   display: inline-flex;
 }
@@ -85,6 +86,11 @@
 .email-share-button {
   background-color: #666666;
   border: 1px solid #666666;
+}
+
+.reddit-share-button {
+    background: #ff4500;
+    border: 1px solid #ff4500;
 }
 
 .email-share-button a {

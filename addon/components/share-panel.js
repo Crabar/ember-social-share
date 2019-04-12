@@ -13,6 +13,7 @@ export default Ember.Component.extend({
                       'gplus': 'gplus-share-button',
                       'email': 'email-share-button',
                       'e-mail': 'email-share-button',
+                      'reddit': 'reddit-share-button',
                   },
   buttons: '',
   labels: '',
