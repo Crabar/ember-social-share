@@ -19,7 +19,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@fortawesome/ember-fontawesome": "0.1.0-8",
+    "@fortawesome/ember-fontawesome": "^0.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
     "broccoli-asset-rev": "^2.6.0",
@@ -50,7 +50,7 @@
     "buttons"
   ],
   "dependencies": {
-    "@fortawesome/ember-fontawesome": "0.1.9",
+    "@fortawesome/ember-fontawesome": "^0.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
     "ember-cli-babel": "^6.8.2",
